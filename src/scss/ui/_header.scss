@@ -1,0 +1,45 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header{
+    .cont-header{
+        padding-top: 10rem;
+        text-align: left;
+
+        h3{
+          margin-bottom: 3rem;  
+          color: v.$gris;
+        }
+
+        p{
+            margin-bottom: 2rem;
+        }
+
+        .header-btn{
+            display: inline-block;
+        }
+
+        @include m.tablet{
+            padding-top: 19rem;
+            display: flex;
+            flex-direction: row-reverse;
+
+            h1{
+                font-size: 4rem;
+            }
+
+            p{
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .header-img{
+        width: 75%;
+        margin: 0 auto 3rem auto;
+
+        @include m.tablet{
+            min-width: 30rem;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.skills{
+    padding-top: 10rem;
+
+    .cont-skills{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.skill{
+    display: flex;
+    margin: 0 auto 4rem auto;
+
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+
+    .skill-img{
+        width: 10rem;
+        margin-right: 2rem;
+    }
+
+    .cont-skill{
+        .skill-text{
+            p{
+                margin-bottom: 0rem;
+            }
+        }
+    }
+}

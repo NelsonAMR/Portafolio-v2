@@ -1,0 +1,49 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contact{
+    padding-top: 10rem;
+    margin-bottom: 10rem;
+
+    .cont-contact{
+        margin: 0 auto;
+        max-width: 50rem;
+
+        .btn-send{
+            width: 33%;
+        }
+    }
+}
+
+.contact-item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    background-color: v.$color3;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    border-radius: 1rem;
+
+    &:focus{
+        background-color: v.$color3;
+    }
+
+    label{
+        font-size: 1.25rem;
+    }
+
+    input{
+        border: none;
+        background-color: unset;
+        outline: none;
+        padding: 1rem 0 1.5rem 0;
+    }
+
+    textarea{
+        border: none;
+        background-color: unset;
+        outline: none;
+        resize: none;
+        height: 12.5rem;
+        padding: 1rem 0 1.5rem 0;
+    }
+}
