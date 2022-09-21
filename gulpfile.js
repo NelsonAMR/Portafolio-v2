@@ -55,6 +55,7 @@ function dev(done){
     done();
 }
 
+exports.build = series(css, js, img);
 exports.css = css;
 exports.js = js;
 exports.img = img;
